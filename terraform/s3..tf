@@ -1,4 +1,4 @@
-resource "aws_s3_bucket" "landing_data_lake" {
+resource "aws_s3_bucket" "landing_data" {
   bucket = "landing-zone-trio"
   acl    = "private"
   
@@ -7,7 +7,7 @@ resource "aws_s3_bucket" "landing_data_lake" {
   }
 }
 
-resource "aws_s3_bucket" "processing_data_lake" {
+resource "aws_s3_bucket" "processing_data" {
   bucket = "processing-zone-trio"
   acl    = "private"
   
@@ -16,7 +16,7 @@ resource "aws_s3_bucket" "processing_data_lake" {
   }
 }
 
-resource "aws_s3_bucket" "curated_data_lake" {
+resource "aws_s3_bucket" "curated_data" {
   bucket = "curated-zone-trio"
   acl    = "private"
   
