@@ -7,7 +7,7 @@ resource "aws_vpc" "main" {
 }
 
 resource "aws_instance" "airbyte_ec2" {
-  ami           = "ami-0d191299f2822b1fa" # Substitua pelo ID correto da Amazon Linux 2 AMI
+  ami           = "ami-0d191299f2822b1fa"
   instance_type = "t2.medium"
   key_name      = "key-pair-trio-data"
   subnet_id     = aws_subnet.main[0].id
